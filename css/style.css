@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --1:white;
+    --2:black;
+    --3:green;
+    --4:rgb(72, 208, 72);
+    --5:rgb(172, 219, 172);
+}
+
+body{
+    background-color: var(--4);
+}
+
+.score{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item{
+    background-color: var(--5);
+    width: 3rem;
+    height: 2.9rem;
+    cursor: pointer;
+    -webkit-mask-image: url('./../img/stars.svg');
+    mask-image: url('./../img/stars.svg')
+}
+
+.item.selec{
+    background-color: var(--3);
+}
