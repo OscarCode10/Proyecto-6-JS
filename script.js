@@ -30,6 +30,6 @@ document.querySelectorAll(".item").forEach(item => {
     item.addEventListener("click", (e) => {
         const position = item.getAttribute("data-pos")
         scoreNow = parseInt(position) + 1
-        console.log(scoreNow);
+        console.log(`Su calificación son ${scoreNow} estrellas`);
     })
 });
